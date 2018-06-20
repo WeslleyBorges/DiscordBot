@@ -3,12 +3,13 @@ import asyncio
 import strings_codes
 import auxiliary_functions
 
+
 client = discord.Client()
 
 
 @client.event
 async def on_ready():
-    await client.send_message(client.get_channel(strings_codes.test_channel_id), strings_codes.welcome_message)
+    print('Estou pronto, mas não aviso no chat.')
 
 
 @client.event
